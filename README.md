@@ -80,6 +80,5 @@ After deployment:
 - GitHub Actions
 - GitHub Pages
 
-## Portfolio Notes
 
-This project uses realistic fixtures and no real customer data. The web demo shows the service workflow for recruiters, while the Salesforce source gives an implementation path for a Developer Edition org.
+
