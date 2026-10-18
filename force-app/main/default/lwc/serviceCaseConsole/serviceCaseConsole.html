@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Service Case Console" icon-name="standard:case">
+        <div class="slds-p-around_medium">
+            <template if:true={action}>
+                <dl class="slds-list_horizontal slds-wrap">
+                    <dt class="slds-item_label slds-truncate">Stage</dt>
+                    <dd class="slds-item_detail slds-truncate">{action.stage}</dd>
+                    <dt class="slds-item_label slds-truncate">Owner Queue</dt>
+                    <dd class="slds-item_detail slds-truncate">{action.ownerQueue}</dd>
+                    <dt class="slds-item_label slds-truncate">External Status</dt>
+                    <dd class="slds-item_detail slds-truncate">{action.externalStatus}</dd>
+                </dl>
+                <p class="slds-m-top_medium">{action.nextAction}</p>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error">
+                    Console action unavailable. Confirm Case access and Apex permissions.
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
